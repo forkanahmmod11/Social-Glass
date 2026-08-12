@@ -1,0 +1,54 @@
+{
+  "name": "Subscription",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string",
+      "description": "Email of the subscribed user"
+    },
+    "plan_name": {
+      "type": "string",
+      "enum": [
+        "days_15",
+        "days_30",
+        "days_90",
+        "days_180",
+        "days_365"
+      ],
+      "description": "Name of the subscription plan"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "active",
+        "expired",
+        "cancelled",
+        "pending"
+      ],
+      "default": "pending"
+    },
+    "start_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "end_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "keyword_searches_used": {
+      "type": "number",
+      "default": 0
+    },
+    "hashtag_generations_used": {
+      "type": "number",
+      "default": 0
+    },
+    "price_bdt": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "user_email",
+    "plan_name"
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "name": "AdConfig",
+  "type": "object",
+  "properties": {
+    "slot": {
+      "type": "number",
+      "description": "Ad slot number (1, 2, or 3)"
+    },
+    "title": {
+      "type": "string",
+      "description": "Ad title text"
+    },
+    "description": {
+      "type": "string",
+      "description": "Ad description text"
+    },
+    "image_url": {
+      "type": "string",
+      "description": "Ad image URL"
+    },
+    "link_url": {
+      "type": "string",
+      "description": "URL to open when ad is clicked"
+    },
+    "is_active": {
+      "type": "boolean",
+      "default": true
+    }
+  },
+  "required": [
+    "slot",
+    "title"
+  ]
+}

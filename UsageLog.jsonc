@@ -1,0 +1,23 @@
+{
+  "name": "UsageLog",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "tool_name": {
+      "type": "string"
+    },
+    "platform": {
+      "type": "string"
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "required": [
+    "user_email",
+    "tool_name"
+  ]
+}

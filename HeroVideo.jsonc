@@ -1,0 +1,21 @@
+{
+  "name": "HeroVideo",
+  "type": "object",
+  "properties": {
+    "video_url": {
+      "type": "string",
+      "description": "Direct URL of the uploaded premium hero showcase video"
+    },
+    "is_active": {
+      "type": "boolean",
+      "default": true
+    },
+    "title": {
+      "type": "string",
+      "description": "Optional label shown above the video on the Dashboard"
+    }
+  },
+  "required": [
+    "video_url"
+  ]
+}

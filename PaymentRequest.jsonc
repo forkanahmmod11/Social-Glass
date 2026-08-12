@@ -1,0 +1,54 @@
+{
+  "name": "PaymentRequest",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "plan_name": {
+      "type": "string",
+      "enum": [
+        "days_15",
+        "days_30",
+        "days_90",
+        "days_180",
+        "days_365"
+      ]
+    },
+    "payment_method": {
+      "type": "string",
+      "enum": [
+        "bkash",
+        "nagad",
+        "rocket",
+        "upay"
+      ]
+    },
+    "transaction_id": {
+      "type": "string"
+    },
+    "screenshot_url": {
+      "type": "string"
+    },
+    "amount_bdt": {
+      "type": "number"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "pending",
+        "approved",
+        "rejected"
+      ],
+      "default": "pending"
+    },
+    "admin_note": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "user_email",
+    "plan_name",
+    "transaction_id"
+  ]
+}

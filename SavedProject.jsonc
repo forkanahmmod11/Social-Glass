@@ -1,0 +1,42 @@
+{
+  "name": "SavedProject",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "keywords",
+        "hashtags",
+        "captions",
+        "content_ideas",
+        "hooks",
+        "analysis"
+      ]
+    },
+    "platform": {
+      "type": "string",
+      "enum": [
+        "youtube",
+        "facebook",
+        "instagram",
+        "tiktok",
+        "all"
+      ]
+    },
+    "content": {
+      "type": "string",
+      "description": "JSON stringified content data"
+    }
+  },
+  "required": [
+    "user_email",
+    "title",
+    "type"
+  ]
+}
